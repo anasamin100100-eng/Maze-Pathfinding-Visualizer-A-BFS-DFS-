@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Maze Pathfinding Visualizer (A*, BFS, DFS)</h2>
+
+<div class="instructions">
+    <p>1️⃣ First click → Starting point (orange)</p>
+    <p>2️⃣ Second click → Ending point (cyan)</p>
+    <p>3️⃣ Click empty cells → Add/remove walls</p>
+    <p>Press <strong>M</strong> → Generate Maze</p>
+    <p>Press <strong>Clear</strong> → Reset Grid</p>
+</div>
+
+<div class="controls">
+    <button onclick="run('astar')">A*</button>
+    <button onclick="run('bfs')">BFS</button>
+    <button onclick="run('dfs')">DFS</button>
+    <button onclick="reset()">Clear</button>
+    <div class="speed-control">
+    <label for="speed">Speed:</label>
+    <input type="range" id="speed" min="10" max="200" value="80">
+</div>
+
+</div>
+
+<canvas id="grid"></canvas>
+<p id="stats"></p>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

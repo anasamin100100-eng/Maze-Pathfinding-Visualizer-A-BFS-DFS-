@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+canvas {
+    background: white;
+    border: 2px solid black;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.instructions p {
+    margin: 3px;
+    font-size: 16px;
+    color: #333;
+}
+.speed-control {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.speed-control input {
+    width: 200px;
+}
+
